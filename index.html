@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Kamu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f9e7e7, #fce5ec);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in-out;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #e75480;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 3em;
+      color: #ff6b81;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e75480;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>Hai, Kamu 😊</h1>
+    <p>
+      Aku cuma mau bilang… <br />
+      Makasih ya kamu udah mau nerima aku lagi di hidup kamu setelah aku buat kamu sakit kemarin. <br />
+      Tapi aku bakalan berusaha untuk menjadi lebih baik lagi untuk kamu. <br /><br />
+      Dan sekali lagi makasih kamu masih pengen menjalin hubungan baik sama aku. ✨
+    </p>
+
+    <a class="btn" href="https://wa.me/08589453310" target="_blank">Balas dong 😊</a>
+  </div>
+</body>
+</html>
+
